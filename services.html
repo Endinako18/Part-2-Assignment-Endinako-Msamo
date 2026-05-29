@@ -3,29 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="./CSS/style.css">
     <title>Services</title>
+    <!-- Public FontAwesome CDN for bullet-proof icon loading -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<!-- Link external CSS file -->
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Our Services</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="enquiry.html">Enquiry</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-    <ul>
-        <li>Personal errands</li>
-        <img src="images/Personal errands.png" width="300">
-        <li>Pickup and delivery</li>
-        <img src="images/Pickup and delivery.png" width="300">
-        <li>Household support</li>
-        <img src="images/Household support.png" witdth="300">
-        <li>Personal shopping</li>
-        <img src="images/Personal shopping.png" width="300">
-        <li>Optional add-ons</li>
-    </ul>
+
+  <header class="main-header">
+       <div class="header-container">
+            <div class="logo">
+                <img src="images/my logo.png" alt="ErrandEase Logo">
+            </div>
+         <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html"class="active">Services</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="contact.html">Contact</a>
+         </nav>
+       </div>
+  </header>
+
+  <main class="services-container">
+
+       <div class="card">
+            <div class="icon"><i class="fas fa-shopping-cart"></i></div>
+                <h3>Errands</h3>
+                <p>Shopping, deliveries, and daily tasks.</p>
+                <div class="card-gallery">
+                    <img src="images/delivery 1.png" alt="Delivery">
+                    <img src="images/delivery 3.png" alt="Delivery">
+                    <img src="images/shopping 3.png" alt="Shopping">
+                </div>
+       </div>
+        
+        <div class="card">
+             <div class="icon"><i class="fa-solid fa-calender-check"></i></div>
+             <h3>Personal Assistance</h3>
+             <p>Bookings, scheduling and reminders.</p>
+             <div class="card-gallery">
+                 <img src="images/schedule.png" alt="Schedule">
+                 <img src="images/bookings.jpeg" alt="Bookings">
+             </div>
+        </div>
+
+        <div class="card">
+            <div class="icon"><i class="fas fa-briefcase"></i></div>
+            <h3>Home Support</h3>
+            <p>Admin help and Office Suppot.</p>
+            <div class="card-gallery">
+                <img src="images/office support.png" alt="Office Support">
+                <img src="images/home admin 1.png" alt="Home Admin">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="icon"><i class="fas fa-star"></i></div>
+            <h3>Concierge</h3>
+            <p>Premium and Lifestyle Services.</p>
+            <div class="card-gallery">
+                <img src="images/lifestyle 1.png" alt="Lifestyle">
+                <img src="images/lifestyle 2.png" alt="Concierge">
+                <img src="images/lifestyle 3.png" alt="Premium Services">
+            </div>
+        </div>
+
+  </main>
+
+  <section class="cta-section">
     <button>Book now</button>
+  </section>
+    
 <footer>
     <p>&copy; 2026 ErrandEase | All Rights Reserved</p>
 </footer>
